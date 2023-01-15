@@ -1,0 +1,20 @@
+---
+title: "Detecting Binlist Differences/Discrepancies"
+author: "Will Decker"
+date: "2022-11-08"
+output: html_document
+---
+
+```{r}
+
+library(diffr)
+
+```
+
+```{r}
+file1 <- 'path_to_file'
+file2 <- 'path_to_file'
+
+diffr(file1, file2)
+```
+
