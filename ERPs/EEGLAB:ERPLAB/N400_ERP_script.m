@@ -1,7 +1,16 @@
+%%
+
+% Authors: Will Decker & Julie M. Schneider
+
+%%
+
+
 %% Introduction
 %{ 
 This script takes you through the standard data processing steps to
-extract N400 ERPs from EEG data.
+extract N400 ERPs from EEG data. This script is broken up into chunks of code. Individual lines
+of code can be run or entire chunks of code can be run. This is for ease of use and 
+for better comprehension of each step of the analysis process. 
 
 There are multiple components to this proces. Most are automated in the
 script however there are some steps that must be completed manually.
@@ -33,7 +42,7 @@ sections of analysis. You may need to re-run these variables (directories, subje
 
 %%
 clear
-eeglab;
+eeglab; % opens up EEGLAB
 
 %% Step 1: Establishing directories
 %{ 
@@ -50,7 +59,7 @@ accessible as it is run through each step of this process.
 % Type in the locations of these directories within the ''(quotes)
 maindir = ''; % The 'maindir' is where MATLAB will pull raw EEG data from
 workdir = ''; % The 'workdir' is an active directory that MATLAB will send all working data to
-txtdir = ''; % 'txtdir' os for textfiles
+txtdir = ''; % 'txtdir' is for textfiles
 erpdir = ''; % The 'erpdir' is where ERPs will be sent
 
 %% Step 2: Subject list
