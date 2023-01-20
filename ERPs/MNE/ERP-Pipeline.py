@@ -61,11 +61,7 @@ filtered_data = mne.filter.filter_data(data, raw.info['sfreq'], 30, 0.1)
 
 ## Epoching data
 
-<<<<<<< HEAD
-epochs = mne.Epochs(raw, events, tmin=-0.2, tmax=0.8, preload= True)
-=======
 epochs = mne.Epochs(raw, events, tmin=-0.2, tmax=0.8, preload = True)
->>>>>>> 202db6b4eef61f34d0ca3883e701feef0efb128f
 
 print(epochs)
 print(epochs.event_id)
