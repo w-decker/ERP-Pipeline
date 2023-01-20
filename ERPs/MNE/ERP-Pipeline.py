@@ -44,7 +44,7 @@ print(type(data))  # <class 'numpy.ndarray'>
 print(data.shape)  # (n_channels, n_samples)
 
 
-## Identifying Trigger Codes and epoching data
+## Identifying Trigger Codes and Epoching data
 
 events,_ = mne.events_from_annotations(raw)
 print(events[:]) # check events
