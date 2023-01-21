@@ -10,6 +10,8 @@
 
 # Step 2: run the following code
 
+        # To run the codeL (1) cd into this file's directory (2) type: 'sh file_name.sh' (3) The previous command will exectue the code within this bash file
+
 subjectlist=$(cat path_to_subject_list)
 
     for subject in $subjectlist;
