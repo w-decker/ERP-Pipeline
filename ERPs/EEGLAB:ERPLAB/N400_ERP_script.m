@@ -292,7 +292,7 @@ end
 
 %% Editing binlist using terminal
 
-% EEGLAB created an uneditable header in your binlist/eventlist which can make it
+% EEGLAB creates an uneditable header in your binlist/eventlist which can make it
 % difficult to analyize your behavioral data later on. This section of code removes that header
 % using macOS terminal
 
