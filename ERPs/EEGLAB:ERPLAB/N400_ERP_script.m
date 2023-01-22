@@ -130,7 +130,7 @@ end
 
 %% Step 5: Removing unncessary blocks of data
 % this sections removes large chunks of unneeded data automaticall via a
-% defined temporal threshold
+% defined temporal range
 
 for s=1 %change number of subjects as needed
     
