@@ -290,11 +290,11 @@ EEG  = pop_artmwppth( EEG , 'Channel',  [], 'Flag',  1, 'Threshold',  100, 'Twin
 
 end
 
-%% Editing binlist using terminal
+%% Editing eventlist using terminal
 
-% EEGLAB creates an uneditable header in your binlist/eventlist which can make it
+% EEGLAB creates an uneditable header in your eventlist which can make it
 % difficult to analyize your behavioral data later on. This section of code removes that header
-% using macOS terminal
+% using macOS terminal and bash code
 
 % for this section of code, make sure you have downloaded
 % "edit_bin_list.sh" and saved it to your txtdir (NOTE: there are minor
