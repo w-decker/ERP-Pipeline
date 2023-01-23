@@ -261,7 +261,7 @@ NOTES:
 This portion of the scripts pulls from the binlist created in Step 8 found
 in the 'txtdir'. This script assumes that the name of the binlist file is
 'binlist.txt'. If this is not the name of your binlist, you will need to
-change it in line 259 of this script.
+change it in line 282 of this script.
 %}
 
 for s=1:numsubjects %change number of subjects as needed
@@ -304,6 +304,12 @@ end
 % In terminal type sh edit_bin_list.sh
 
 %% Step 10: Average ERP
+
+%{
+NOTES: The following code averages ERPs together, that is, it averages ERPs across participants. This portion of the script should be complete
+once all participant's data has been preprocessed and run through the previous code outlined in this script
+
+%}
 
 EEG = pop_loadset([subject '_epoch_ar.set'],workdir); 
 [ALLEEG, EEG, CURRENTSET] = eeg_store( ALLEEG, EEG, 0 );
