@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# The following code deletes extraneous lines of data from the bins file and converts the output
+# The following code deletes extraneous lines of data from the eventlist file and converts the output
 # into a .csv file
 
 # Step 1: create a subject list as a .txt file:
