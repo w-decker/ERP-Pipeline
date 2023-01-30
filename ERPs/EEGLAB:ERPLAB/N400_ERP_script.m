@@ -215,7 +215,9 @@ classification(MARA) >> MARA Classification >> Plot and select components
 for removal >> Ok
 
 Review components you wish to remove. An artifcact likelihood of 70% or higher is acceptable
-for removal but this should be evaluated by your research team as you see fit.
+for removal but this should be evaluated by your research team as you see fit. If you would like
+to understand artifact identification, a good resource can be found here: https://sccn.ucsd.edu/githubwiki/files/eeglab2018_lpt_evaluation_ica2.pdf
+You can also practice identifying artifacts here: https://labeling.ucsd.edu/tutorial/practice
 
 Select and record artifacts you wish to remove. This is important and should be included in
 analysis.
