@@ -3,7 +3,7 @@ to improve replication efforts, transparency and literacy. Resources for BIDS ca
 
 Details
 
-'renaming-brainvision.ipynb' -> This code renames all three BrainVision files (.vhdr, .vmrk, .eeg) while keeping them and the metadata intact.
+'rename-brainvision.ipynb' -> This code renames all three BrainVision files (.vhdr, .vmrk, .eeg) while keeping them and the metadata intact.
 This is important to BIDS as some naming schemes may not include subjectIDs or subject numbers. This code allows one to rename BrainVision files to inserts
 a subjectID/number and any other important information. If you do not need to rename you brain vision files, ignore this code.
 
