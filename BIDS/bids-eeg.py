@@ -3,7 +3,7 @@
 # Title: Converting EEG data into BIDS format
 # Author: Will Decker
 
-# Load necessary libraries
+## Load necessary libraries
 
 import os
 import os.path as op
@@ -11,7 +11,7 @@ import mne
 from mne_bids import write_raw_bids, BIDSPath, print_dir_tree
 from mne_bids.stats import count_events
 
-# load data
+## load data
 
 rawdata = " "; # path to raw data
 
@@ -40,7 +40,7 @@ raw = mne.concatenate_raws(raw_data)
 
 print(raw.info)
 
-# Montage
+## Montage
 
 get_montage = mne.channels.get_builtin_montages(descriptions = True) # get list of standard montages
 for montage_name, montage_description in get_montage: 
@@ -53,7 +53,16 @@ raw.set_montage(standard_montage) # attribute montage to raw object
 
 raw.plot_sensors() # display montage
 
-# Convert EEG data to BIDS format
+# or 
+
+montage_file = " " # path to montage file
+montage = mne.channels.read_custom_montage(montage_file) # read in file
+
+raw.set_montage(montage) # attribute montage to raw object
+
+raw.plot_sensors() # dsiplay montage
+
+## Convert EEG data to BIDS format
 
 bids_root = "" # path to new BIDS output
 task = " " # task
@@ -76,12 +85,12 @@ for ids in subjectID: # create BID compliant data based on subject ID numbers
         continue
 
 
-# Display overview of new BIDS dataset 
+## Display overview of new BIDS dataset 
 
 counts = count_events(bids_root)
 counts
 
-# References
+## References
 
 readme = op.join(bids_root, 'README')
 with open(readme, 'r', encoding='utf-8-sig') as fid:
