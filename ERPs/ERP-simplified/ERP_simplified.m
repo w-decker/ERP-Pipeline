@@ -116,6 +116,22 @@ Example:        bin 1
 
 erpanalysis(subject_start, subject_end, subjects, workdir, txtdir, epoch_baseline, epoch_end)
 
+%% (Optional step): Editing eventlist using terminal
+
+%{ 
+
+EEGLAB creates an uneditable header in your eventlist which can make it
+difficult to analyize your behavioral data later on. This section of code removes that header
+using macOS terminal and bash code
+
+for this section of code, make sure you have downloaded
+"edit_bin_list.sh" and saved it to your txtdir (NOTE: there are minor
+instructions included within this file)
+
+Open terminal and cd into your txtdir where the binlists have been saved
+In terminal type sh edit_bin_list.sh
+
+%} 
 %% Step 9: Average ERPs
 % to read more about the function 'erpaverageEEG' highlight it and press
 % cmd + shift + D (on Mac)
