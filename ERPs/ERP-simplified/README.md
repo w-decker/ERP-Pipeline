@@ -2,7 +2,7 @@
 
 ## Author: Will Decker
 
-The following script and functions combines standard analysis steps using EEGLAB, ERPLAB and other plugins into simple functions that are easy to understand.
+The following script and functions combines and completely automates standard analysis steps using EEGLAB, ERPLAB and other plugins into simple functions that are easy to understand.
 
 To begin working with ERP-simplified:
 
